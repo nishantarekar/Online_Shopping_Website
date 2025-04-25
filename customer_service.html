@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Service</title>
+  <link rel="stylesheet" href="customer_service.css">
+</head>
+<body>
+
+<header>
+  <h1>Customer Service</h1>
+</header>
+
+<div class="container">
+  <!-- FAQs Section -->
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>What is the return policy?</h3>
+      <p>Our return policy allows you to return items within 30 days of purchase. The items must be unused and in original packaging.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How can I track my order?</h3>
+      <p>You can track your order by logging into your account and clicking on "Order History."</p>
+    </div>
+    <div class="faq-item">
+      <h3>Do you offer international shipping?</h3>
+      <p>Yes, we offer international shipping. Shipping charges vary based on location and order size.</p>
+    </div>
+  </section>
+
+  <!-- Contact Information Section -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@eflyer.com</p>
+    <p>Phone: +919284564992  </p>
+    <p>Hours: Monday - Friday, 9 AM - 5 PM</p>
+  </section>
+
+  <!-- Inquiry Form Section -->
+  <section class="form">
+    <h2>Submit an Inquiry</h2>
+    <form action="/submit-inquiry" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</div>
+</body>
+</html>
